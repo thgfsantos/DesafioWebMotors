@@ -1,0 +1,211 @@
+{
+	"info": {
+		"name": "webM",
+		"_postman_id": "3c4a1045-5bcf-30da-6ed2-5ed1a4b1fc31",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Marcar Carros Hummer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "851b235d-f389-4116-adf3-9990a9c2728d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{url}}?marca1=HUMMER",
+					"host": [
+						"{{url}}"
+					],
+					"query": [
+						{
+							"key": "marca1",
+							"value": "HUMMER",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Marca HUMMER e Modelo H1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "08dd37aa-9283-4eb8-a1f4-2eb5a1a162bc",
+						"type": "text/javascript",
+						"exec": [
+							"responseCode.code === 200"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{url}}?marca1=HUMMER&modelo1=H1",
+					"host": [
+						"{{url}}"
+					],
+					"query": [
+						{
+							"key": "marca1",
+							"value": "HUMMER",
+							"equals": true
+						},
+						{
+							"key": "modelo1",
+							"value": "H1",
+							"equals": true
+						}
+					]
+				},
+				"description": "{{url}}?marca1=HUMMER&modelo1=H1"
+			},
+			"response": []
+		},
+		{
+			"name": "GET Marca HUMMER e Modelo H1 Ano 199 e Versao 6.5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "08dd37aa-9283-4eb8-a1f4-2eb5a1a162bc",
+						"type": "text/javascript",
+						"exec": [
+							"responseCode.code === 200"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{url}}?marca1=HUMMER&modelo1=H1&anode=1999&versao1=6.5 4x4 HARD TOP TURBO DIESEL 4P MANUAL",
+					"host": [
+						"{{url}}"
+					],
+					"query": [
+						{
+							"key": "marca1",
+							"value": "HUMMER",
+							"equals": true
+						},
+						{
+							"key": "modelo1",
+							"value": "H1",
+							"equals": true
+						},
+						{
+							"key": "anode",
+							"value": "1999",
+							"equals": true
+						},
+						{
+							"key": "versao1",
+							"value": "6.5 4x4 HARD TOP TURBO DIESEL 4P MANUAL",
+							"equals": true
+						}
+					]
+				},
+				"description": "{{url}}?marca1=HUMMER&modelo1=H1&anode=199&versao1=6.5 4x4 HARD TOP TURBO DIESEL 4P MANUAL"
+			},
+			"response": []
+		},
+		{
+			"name": "GET Marca Carros Nao Encontrado",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{url}}?marca1=XPTO",
+					"host": [
+						"{{url}}"
+					],
+					"query": [
+						{
+							"key": "marca1",
+							"value": "XPTO",
+							"equals": true
+						}
+					]
+				},
+				"description": "{{url}}?marca1=XPTO"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Marca Carro e Modelo Nao Encontrado",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": " application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{url}}?marca1=HUMMER&modelo1=XPTO",
+					"host": [
+						"{{url}}"
+					],
+					"query": [
+						{
+							"key": "marca1",
+							"value": "HUMMER",
+							"equals": true
+						},
+						{
+							"key": "modelo1",
+							"value": "XPTO",
+							"equals": true
+						}
+					]
+				},
+				"description": "{{url}}?marca1=HUMMER&modelo1=XPTO"
+			},
+			"response": []
+		}
+	]
+}
